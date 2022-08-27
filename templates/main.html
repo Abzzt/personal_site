@@ -15,7 +15,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand navbar-white navbar-light">
+    <nav class="navbar navbar-expand navbar-white navbar-light fixed-top">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
         
@@ -39,12 +39,12 @@
         <div class="d-flex flex-column align-items-center center profile">
             <div class = "text-center profile-content align-bottom">
                 <h2 class= "text-white fade-in one profile-content" >Hey! I'm <span class= "animate-character">Abigail</span></h2>
-                <a class="btn btn-outline-light btn-close-white btn-lg fade-in two align-content-end" href="#!" role="button">learn more</a>
+                <a class="btn btn-outline-light btn-close-white btn-lg fade-in two align-content-end" href="#about-me" role="button">learn more</a>
             </div>
         </div>
 
-        <div class="d-flex align-items-center flex-column" data-spy="scroll" >
-            <h1 class= "h1 header m-4 subheader text-center p-4">About me</h1>
+        <div class="d-flex align-items-center flex-column" data-spy="scroll" id = "about-me">
+            <h1 class= "h1 header m-4 subheader text-center p-4 fade-in one">About me</h1>
             <img src="../images/abigail.jpg" class="img-fluid m-4 mr-5" alt="profile image">
                 <div class = "h4">Penultimate student in SUTD</div>
                 <div class ="text-start mh-100">Course: BA of Science in Design and Artificial Intelligence</div>
@@ -58,13 +58,13 @@
     <hr>
 
     <div class="container">
-        <h2 class= "m-4 subheader text-center align-content-center">My Hobbies</h2>
+        <h2 class= "m-4 subheader text-center align-content-center ">My Hobbies</h2>
         <div class="row">
+
         <div class = "col-sm-12 col-md-6 col-lg-6 mb-4">
             <div class="card shadow-1-strong"><a href="#" class = 'btn p-0' data-bs-toggle="modal" data-bs-target="#rock-climbing">
                 <img class="card-img hobby-img" src="../images/climbing_comp.jpg" alt="Weightlift buddy icon">
                 <div class="card-body">
-                    
                     <h3 class="card-title"><bold>Rock climbing</bold></h3>
                 </div>
                 </a>
@@ -72,7 +72,7 @@
         </div>
     
         <div class = "col-sm-12 col-md-6 col-lg-6 mb-4">
-            <div class="card shadow-1-strong"><a href="#" class = 'btn p-0' data-bs-toggle="modal" data-bs-target="#bandz">
+            <div class="card shadow-1-strong"><a href="#" class = 'btn p-0'>
                 <img class="card-img hobby-img" src="../images/keyboard.jpg" alt="Music">
                 <div class="card-body">
                     <h3 class="card-title"><bold>Music</bold></h3>
@@ -102,23 +102,24 @@
                             <button type="button" data-bs-target="#carouselclimbing" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#carouselclimbing" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
+
                         <div class="carousel-inner">
+
                             <div class="carousel-item active">
-                                <img src="../images/climbing_comp.jpg" class="d-block w-100" alt="...">
-                                
-                                <div class="carousel-caption d-none d-md-block text">
-                                         
+                                <img src="../images/climbing_comp.jpg" class="d-block w-100" alt="Gravical 2021">
+                                <div class="carousel-caption d-none d-md-block text">                                       
                                     <h5>Climbing</h5>
                                     <p>Gravical Competition Jan 2022</p>
                                 </div>
                             </div>
+
                             <div class="carousel-item">
-                                <img src = "../images/first_climb.gif" class="d-block w-100"></video>
+                                <img src = "../images/first_climb.gif" class="d-block w-100">
                 
                                 <div class="carousel-caption d-none d-md-block text">
                                     <h5>When it began</h5>
                                     <p>This was a video of me climbing in 2018, they year I started climbing.</p>
-                                    <p>It was tough. I fell a lot. </p>
+                                    <p>It was tough. I fell a lot.</p>
                                 </div>
                             </div>
 
@@ -143,15 +144,15 @@
 
                         </div>
                         
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselclimbing" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselclimbing" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
 
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselclimbing" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselclimbing" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         
 
                     </div>
@@ -165,6 +166,10 @@
     </div>
 
     <!-- Modal Bandz -->
+  
+    
+
+
     <div class="modal fade" id="bandz" tabindex="-1" aria-labelledby="BandModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -174,24 +179,21 @@
                 </div>
                 
                 <div class="modal-body">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div id="bandIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#bandIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#bandIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#bandIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-inner">
-                            
-
+                        
+                        <div class="carousel-inner">         
                             <div class="carousel-item active">
-                                <img src="../images/keyboard.jpg" class="d-block w-100" alt="...">
-                                
+                                <img src="../images/keyboard.jpg" class="d-block w-100" alt="keyboard">          
                                 <div class="carousel-caption d-none d-md-block text">
                                     <h5>Music</h5>
                                     <p>I play the keyboards</p>
                                 </div>
                             </div>
-
 
                             <div class="carousel-item">
                                 <img src="../images/bandz.jpg" class="d-block w-100" alt="...">
@@ -207,16 +209,17 @@
                                 <div class="carousel-caption d-none d-md-block text">
                                     <h5>The Band </h5>
                                     <p>Here is us after the performance</p>
-                                    
                                 </div>
                             </div>
 
+                            
                         </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#bandIndicators" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#bandIndicators" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -227,9 +230,6 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
-
-
-
             </div>
         </div>
     </div>
