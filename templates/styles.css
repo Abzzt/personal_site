@@ -1,0 +1,193 @@
+main {
+    padding: 0;
+    margin: 0;
+    background: white;
+    text-align: center;
+    
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile{
+    background-image: url('../images/me.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+    
+}
+
+
+
+.profile-content {
+    position: relative;
+    opacity: 1;
+    fill-opacity: 1;
+}
+
+
+.text{
+    background-color: #222;
+    opacity: 0.7;
+    
+}
+
+
+.opaque {
+    opacity: 1.0;
+}
+
+
+.header{
+    color:rgb(255, 255, 255);
+    width: 50%;
+}
+
+
+.display-5 {
+    color:black;
+}
+
+
+.animate-character {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    animation-delay: .3s;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #eee3b2 0%,
+        #c7f3ca 29%,
+        #e0afc3 67%,
+        #b4c8e6 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+      
+    }
+    
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+        
+        }
+    }
+
+.subheader {
+    color: black
+}
+
+.card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+}
+
+.hobby-img{
+    height: 80vh
+}
+
+.card-bg{
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    background-size:120%;
+    background-repeat:no-repeat;
+    background-position: center center;
+ 
+    position: absolute;
+  
+    background: inherit;
+
+}
+
+.card:hover{
+    transform: scale(0.98);
+    box-shadow: 0 0 5px -2px rgba(0,0,0,0.6);
+    background-size:110%;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);  
+  }
+
+.btn {
+    border: 2px solid;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    border-image-source:  var(--gradient) !important; 
+    transition: all .4s ease;
+    -webkit-text-fill-color: rgb(14, 14, 14) !important;
+}
+
+.btn:hover, .btn:focus {
+    background: var(--gradient) !important;
+    
+    -webkit-text-fill-color: rgb(87, 113, 128) !important;
+    border: 2px solid rgb(193, 195, 197) !important; 
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+}
+
+
+/* Keyframes for the fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  animation-delay: .6s;
+}
+.fade-in.four {
+  -webkit-animation-delay: .9s;
+  -moz-animation-delay: .9s;
+  animation-delay: .9s;
+}
+
+.fade-in.five {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+  
+
